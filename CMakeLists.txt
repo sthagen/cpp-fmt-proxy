@@ -36,7 +36,7 @@ CPMAddPackage(
 # ---- Create binary ----
 
 add_executable(fmt_test main.cpp)
-target_link_libraries(fmt_test doctest metaf)
+target_link_libraries(fmt_test doctest fmt)
 set_target_properties(fmt_test PROPERTIES CXX_STANDARD 17)
 
 # ---- Enable testing ----
